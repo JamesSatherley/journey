@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@=500&display=swap" rel="stylesheet">
+    
+    <title>New Tab&nbsp;&nbsp;&#x25CF;&nbsp;&nbsp;Journey</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #search-bar {
+            width: calc(100% - 30px);
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            background: transparent;
+            z-index: 2;
+            color: white;
+        }
+
+        #search-bar:focus {
+            outline: none;
+        }
+
+        #search-bar::placeholder {
+            color: white;
+        }
+
+        #search-container {
+            width: 60%;
+            backdrop-filter: blur(10px);
+            border: 2px solid white;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        #clock {
+            font-family: 'Roboto', sans-serif;
+            font-size: 150px;
+            color: #fff;
+            margin: 5%;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-top: -10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="clock"></div>
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+        </div>
+    <script src="journey.js"></script>
+</div>
+</body>
+</html>
